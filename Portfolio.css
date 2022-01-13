@@ -1,0 +1,491 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:400);
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    height:100%;
+}
+nav{
+    display:flex;
+    font-size: 2vw;
+    position: fixed;
+    width:100%;
+    z-index: 2;
+    transition: .8s;
+    margin: 0;
+    padding: 0;
+}
+.logo > input{
+    display:flex;
+    width:2.25vw;
+    min-width:30px;
+}
+.static{
+    background-color: rgba(117, 39, 104, 0.226);
+}
+header{
+    height:100vh;
+}
+.heroImage{
+    background-image: url('https://images3.alphacoders.com/995/995481.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit:cover;
+    height:100vh;
+    width:100%;
+}
+.text{
+    display:flex;
+    font-family: 'Khula';
+    position: relative;
+    font-size: .8em;
+    font-style: normal;
+    color:#9a25dfc9;
+    word-wrap:wrap; 
+    justify-content: center;
+    top:30%;
+    padding:50px;
+}
+
+.divider{
+    position: relative;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    top:38vh;
+}
+
+.innerDivider{
+    background:rgb(164, 180, 175);
+    margin-left: auto;
+    margin-right: auto;
+    height:2px;
+    width:60%;
+}
+
+.style{
+    color: #236fe0;
+}
+span {
+    border-right: .1em solid;             
+    animation: caret 1.5s steps(1) infinite;
+  }
+
+nav a{
+    display: flex;
+    text-decoration: none;
+}
+.dropdown{
+    position:fixed; 
+    display:block;
+    float:right;       
+    padding:0;
+    right:0;
+    margin-right:60px;
+    
+}
+.dropbtn{
+    padding: 0;
+    border: none;
+    background: none;
+}
+/*Make drop button extend right to fill the gap*/
+
+.dropbtn > span{
+    display: flex;
+    margin-top:4px;
+    height:.3vw;
+    width:1vw;
+    background: #a63bd8;
+    border-radius: 3px;
+    max-height:10px;
+    transition:.5s
+}
+
+.dropdown-content{
+    display:none;
+    z-index: 1;
+    font-size:70%;
+    position:absolute;
+}
+.dropdown-content a{
+    font-family: 'Khula';
+    color: #1b1a1b;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+.dropdown-content a:hover{
+    background-color: rgba(131, 90, 124, 0.253);
+    transform: scale(1.1);
+    transition:.5s
+  }
+.dropdown:hover .dropbtn> span{
+  transition: .7s;
+  width:3.5vw;
+  display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0;         
+}
+main{
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.aboutIcon{
+    display: block;
+    width:10%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:35px;
+}
+.mainText{
+    display:block;
+    margin-left:30px;   
+    width:30%;
+    height:auto;
+    font-family:'open sans', sans-serif;
+    letter-spacing: .1cm;
+    word-spacing: .2cm;
+}
+.header-abt, .header-exp{
+    font-size:2.5rem;
+    letter-spacing: .2cm;
+    color:rgb(173, 14, 221);
+}
+.about-text{
+    font-size:2rem;
+    color:#51ac86;
+    opacity: .8;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#remains{
+    color:#00ffff;
+}
+.name{
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+    color:  #1034A6;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: .05cm;
+    word-spacing: .2cm;
+    margin:0 auto;
+    justify-content: center;
+    top:40%;
+}
+.about-container{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.exp{
+    display:grid;
+    margin-right:30px;
+    width:40%;
+    text-align: center;
+    color:#1a6ea7;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-html, .container-css, .container-js{
+    font-family: 'Space Mono', monospace;
+    letter-spacing:3px;
+    background-color: #623b7486;
+    margin:10px;
+    border-radius:20px;
+    }
+.skill-name{
+    font-size:2rem;
+}
+.projects{
+    display:grid;
+    background-image:url('https://i.pinimg.com/originals/58/6e/51/586e51559dc40f48cd8ce65af9c1522f.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit:cover;
+    position: relative;
+    background-position: center;
+}
+.projects-header{
+    font-size: xxx-large;
+    display:flex;
+    justify-content:center;
+    height:100%;
+    width:auto;
+    color:  #1034A6;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: .05cm;
+    word-spacing: .2cm;
+}
+.project-icons{
+    position: relative;
+    display:grid;
+    justify-content:space-evenly;
+    grid-gap:100px;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    margin-bottom:200px;
+    margin-top:40px;
+}
+.icon{
+    text-align: center;
+    background:#933A16;
+    opacity:90%;
+    border-radius: 30px;
+    width:250px;;
+    height:90px;
+    transition:0.3s;
+}
+.icon:hover{
+    transform: rotateZ(10deg);
+    transition:0.3s;
+}
+.icon > p{
+    padding-top:15px;;
+}
+.about{
+    position: relative;
+    bottom:0px
+}
+#contact{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #20bf55;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+.contact-header{
+    position: relative;
+    font-family: 'Khula';
+    font-size:2.4rem;
+    font-weight:bold;
+    font-style: italic;
+    color: #7DF9FF;
+    letter-spacing:0.1cm;
+    margin-bottom:10px;
+}
+.contact-info{
+    margin-left:4vw;
+    color:#152633;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing:.06cm;
+    margin-bottom:60px;
+}
+.logo-container{
+    display:flex;
+    justify-content: space-evenly;
+    grid-gap:50px;
+    height:20vh;
+    margin-top:130px;
+}
+/*
+try to fix margin or flex/gridbox for logo-container 
+to have a width like when it goes under 1200px;
+*/
+#github-image{
+    width:8vw;
+}
+#fiverr-image{
+    width:7vw;
+}
+#leetcode-image{
+    width:8vw;
+}
+.contact-quote{
+    margin-right:4vw;
+    width:25%;
+    margin-top:70px;
+    font-size: 2.5rem;
+    letter-spacing:.05cm;
+    font-style: italic;
+    color: #63a389;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact-link{
+    line-height: 20px;;
+    border-color: #525e68;
+    border-width:3px;
+    padding:8px;
+    border-spacing: 10px;
+    border-style: ridge;
+    color:#2f7264
+}
+.progressBars{
+    display:grid;
+    margin-right:30px;
+}
+.progress-background{
+    background-color: rgb(160, 158, 158);
+    width:100%;
+    border-radius:30px;
+}
+#progress-html{
+    background-color: #3e62ff;
+    width:0%;
+    max-width: 85%;
+    color: #152633;
+    border-radius: 30px;
+}
+#progress-css{
+    background-color: #3e62ff;
+    width:0%;
+    max-width:60%;
+    color: #152633;
+    border-radius: 30px;
+}
+#progress-js{
+    background-color: #3e62ff;
+    width:0%;
+    max-width:50%;
+    color: #152633;
+    border-radius: 30px;
+}
+.contact-info :nth-child(2){
+    margin-bottom:50px;
+}
+@media only screen and (min-width:1000px){
+    .container-html, .container-css, .container-js{
+    height:100px;
+}
+}
+@media only screen and (max-width:1200px){
+    #contact{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .header-info{
+        text-align: center;
+    }
+    .contact-quote{
+        width:100%;
+    }
+    #github-image{
+        width:16vw;
+    }
+    #fiverr-image{
+        width:14vw;
+    }
+    #leetcode-image{
+        width:16vw;
+    }
+}
+@media only screen and (max-width:1000px){
+    .about-container{
+        display:grid;
+        grid-template-columns: 1;
+        text-align: center;
+    }
+    .mainText{
+        width:90%;
+        margin-left: 30px;
+    }
+    .aboutIcon{
+        width:20%;
+    }
+    .logo-container{
+        margin-top:60px;
+    }
+    .progressBars{
+        margin:0;
+    }
+    .exp{
+        width:auto;
+        margin:0;
+    }
+}
+    @media only screen and (max-width:800px){
+            .divider{
+                top:37vh;
+            }
+            
+        }
+
+@media only screen and (max-width:700px){
+    .innerDivider{
+        width:700px;
+    }
+       .dropbtn > span{
+            height:3px;
+            width:1.5vw;
+        }
+        .dropdown-content a{
+            font-size:10px;
+        }
+        .dropdown:hover span{
+            transform:scaleX(1.8)
+        }
+        .dropdown-content a{
+            margin-left:-5px;
+        }
+        .mainText{
+            width:100%;
+            margin:0
+        }
+        #statment{
+            font-size:70%;
+        }
+        .header-abt, .header-exp{
+            font-size:80%;
+        }
+        .skill-name{
+            font-size:1.5rem;
+        }
+        .projects{
+            height:60%;
+        }
+        .projects-header{
+            font-size:1.2rem;
+        }
+        .project-icons{
+            grid-template-columns:auto;
+            grid-gap:15px;
+            font-size:0.7rem;
+        }
+        .icon{
+            height:5vh;
+        }
+        .icon > p{
+            padding-top:5px;
+        }
+        .contact-quote{
+            font-size:larger;
+        }
+        #github-image{
+            width:16vw;
+        }
+        #fiverr-image{
+            width:14vw;
+        }
+        #leetcode-image{
+            width:16vw;
+        }
+    }        
+    .contact-info{
+        font-size:1.2rem;
+    }
+        @keyframes caret {
+            50% {
+            border-color: transparent;
+            }
+        }
+        @media only screen and (max-width:600px){
+            .contact-info{
+                font-size: medium;
+            }
+        }
